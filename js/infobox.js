@@ -1,8 +1,10 @@
-/* 1. In row 25 of file 'src/info_box.json' it were mistake ('field' instead of 'img')
- 2. In row 24 of file 'src/info_box.json' it were mistake (duplicating header)
- 3. Not included images for big find button - I have created them
+/*
+ 1. In row 24 of file 'src/info_box.json' it were mistake (duplicating header)
+ 2. In row 25 of file 'src/info_box.json' it were mistake ('field' instead of 'img')
+ 3. In the /img it's not included images for big find button - I have created them
  4. It is not clear how to use dottedHozLine.png
- 5. It is possible, but ineffective to create all markup with JS/jQuery
+ 5. It is possible, but ineffective to create all DOM markup with JS/jQuery
+ 6. It is possible to create and restyle scrollbar for detailed info - if thats need
  */
 
 jQuery(document).ready(
