@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.infobox {
+    width: 312px;
+    height: 325px;
+    display: block;
+    background-image: url('../img/comp_plate_graybasic.png');
+    border: #a1a1a1 solid 1px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px gray;
+    -moz-box-shadow: 5px 5px 5px gray;
+    -webkit-box-shadow: 5px 5px 5px gray;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 50px auto;
+    overflow: hidden;
+    /*shadows for IE*/
+    filter: progid:DXImageTransform.Microsoft.dropshadow(offX=5, offY=5, color=#a1a1a1);
+    filter: progid:DXImageTransform.Microsoft.shadow(direction=135, color=#a1a1a1, strength=7);
+    zoom: 1;
+}
+
+/* prefix 'ib-' is used for Infobox styles*/
+
+.ib-product-photo {
+    width: 100%;
+    height: 200px;
+}
+
+.ib-product-info {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ib-details {
+    font: bold 0.8em/1.25 Arial;
+    color: #ed6c20;
+}
+
+.ib-details:hover {
+    color: gray;
+}
+
+.ib-show-details {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    height: 235px;
+    /*overflow-y: auto; it makes sense to change scrollbar styles (with jScrollPane plugin, for example) and show overflow with scroll*/
+}
+
+.ib-hide-details {
+    /*overflow: hidden;*/
+    height: 35px;
+}
+
+.ib-header {
+    height: 1.8em;
+    overflow: hidden;
+}
+
+.ib-header h2 {
+    font: bold 1.3em/1.25 Arial;
+    color: #ed6c20;
+}
+
+.ib-description {
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+.ib-description-text {
+    font: normal 0.8em/1.25 Arial;
+    color: black;
+    margin-bottom: 2px;
+}
+
+.ib-notes-text {
+    font: normal 0.7em/1.25 Arial;
+    color: gray;
+}
+
+.ib-all-buttons {
+    margin-top: 5px;
+}
+
+.ib-buttons {
+    float: left;
+}
+
+.ib-find-button {
+    float: right;
+    width: 110px;
+    height: 26px;
+    background-image: url('../img/button_find_white_right.png');
+    position: relative;
+    /*for IE7-8*/
+    zoom: 1;
+    *display: inline;
+}
+
+.ib-left-button,
+.ib-right-button {
+    display: inline-block;
+    width: 68px;
+    height: 26px;
+    position: relative;
+    /*for IE7-8*/
+    zoom: 1;
+    *display: inline;
+}
+
+.ib-left-button {
+    background-image: url('../img/button_bg_white_left.png');
+}
+
+.ib-right-button {
+    background-image: url('../img/button_bg_white_right.png');
+}
+
+.ib-buttons img,
+.ib-buttons span,
+.ib-find-button span {
+    position: absolute;
+}
+
+.gray-arrow-left,
+.orange-arrow-left {
+    top: 8px;
+    left: 5px;
+}
+
+.gray-arrow-right,
+.orange-arrow-right {
+    top: 8px;
+    right: 5px;
+}
+
+.gray-button-label-left,
+.gray-button-label-right {
+    font: bold 12px Arial;
+    color: #a1a1a1;
+}
+
+.gray-button-label-left {
+    top: 5px;
+    left: 30px;
+}
+
+.gray-button-label-right {
+    top: 5px;
+    right: 30px;
+}
+
+.orange-button-label-right,
+.orange-big-arrow-right {
+    font: bold 12px Arial;
+    color: #ed6c20;
+    position: absolute;
+}
+
+.orange-button-label-right {
+    top: 5px;
+    left: 12px;
+}
+
+.orange-big-arrow-right {
+    top: 5px;
+    right: 6px;
+}
