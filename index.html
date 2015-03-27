@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>Products Info</title>
     <link rel="stylesheet" href="css/main.css"/>
-	<!--used old version jQuery for IE7-8 supporting-->
+    <!--used old version jQuery for IE7-8 supporting-->
     <script src="js/jquery-1.11.2.min.js"></script>
     <!--[if lte IE 8]>
     <script src="js/json2.js"></script>
@@ -23,7 +23,7 @@
             <h2></h2>
         </div>
 
-        <div class="ib-description ib-hide-details">
+        <div class="ib-description ib-hiding-details">
             <p class="ib-description-text"></p>
 
             <p class="ib-notes-text"></p>
@@ -35,20 +35,23 @@
 
         <div class="ib-all-buttons">
             <div class="ib-buttons">
-                <div class="ib-left-button">
-                    <img class="gray-arrow-left" src="img/btn_ic_gray_left.png" alt="Previous"/>
+                <div class="sprite sprite-button_bg_white_left  ib-left-button">
                     <span class="gray-button-label-left">Prev</span>
+
+                    <div class="sprite sprite-btn_ic_gray_left"></div>
                 </div>
 
-                <div class="ib-right-button">
-                    <img class="gray-arrow-right" src="img/btn_ic_gray_right.png" alt="Next"/>
+                <div class="sprite sprite-button_bg_white_right ib-right-button">
                     <span class="gray-button-label-right">Next</span>
+
+                    <div class="sprite sprite-btn_ic_gray_right"></div>
                 </div>
             </div>
 
-            <div class="ib-find-button">
+            <div class="ib-find-button sprite sprite-button_find_white_right">
                 <span class="orange-button-label-right">Find A Store</span>
-                <span class="orange-big-arrow-right">&#9658;</span>
+
+                <div class="sprite sprite-arrowSide"></div>
             </div>
         </div>
     </div>

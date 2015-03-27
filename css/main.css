@@ -45,17 +45,8 @@
     color: gray;
 }
 
-.ib-show-details {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    height: 235px;
-    /*overflow-y: auto; it makes sense to change scrollbar styles (with jScrollPane plugin, for example) and show overflow with scroll*/
-}
-
-.ib-hide-details {
-    /*overflow: hidden;*/
+.ib-hiding-details {
+    overflow: hidden;
     height: 35px;
 }
 
@@ -72,6 +63,14 @@
 .ib-description {
     overflow: hidden;
     margin-top: -5px;
+}
+
+.ib-active {
+    cursor: pointer;
+}
+
+.ib-scroll {
+    overflow-y: auto;
 }
 
 .ib-description-text {
@@ -97,7 +96,6 @@
     float: right;
     width: 110px;
     height: 26px;
-    background-image: url('../img/button_find_white_right.png');
     position: relative;
     /*for IE7-8*/
     zoom: 1;
@@ -115,30 +113,9 @@
     *display: inline;
 }
 
-.ib-left-button {
-    background-image: url('../img/button_bg_white_left.png');
-}
-
-.ib-right-button {
-    background-image: url('../img/button_bg_white_right.png');
-}
-
-.ib-buttons img,
 .ib-buttons span,
 .ib-find-button span {
     position: absolute;
-}
-
-.gray-arrow-left,
-.orange-arrow-left {
-    top: 8px;
-    left: 5px;
-}
-
-.gray-arrow-right,
-.orange-arrow-right {
-    top: 8px;
-    right: 5px;
 }
 
 .gray-button-label-left,
@@ -157,19 +134,102 @@
     right: 30px;
 }
 
-.orange-button-label-right,
-.orange-big-arrow-right {
-    font: bold 12px Arial;
-    color: #ed6c20;
-    position: absolute;
-}
-
 .orange-button-label-right {
     top: 5px;
     left: 12px;
+    font: bold 12px Arial;
+    color: #ed6c20;
 }
 
-.orange-big-arrow-right {
-    top: 5px;
-    right: 6px;
+.white {
+    color: #FFF;
+}
+
+.sprite {
+    /* used sprite generator http://spritegen.website-performance.org */
+    background-image: url('../img/buttons-sprite.png');
+    background-repeat: no-repeat;
+}
+
+.sprite-arrowSide {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-position: -5px -5px;
+}
+
+.sprite-btn_ic_brn_left,
+.sprite-btn_ic_gray_left,
+.sprite-btn_ic_brn_right,
+.sprite-btn_ic_gray_right {
+    width: 12px;
+    height: 10px;
+    position: absolute;
+    top: 8px;
+}
+
+.sprite-btn_ic_brn_left,
+.sprite-btn_ic_gray_left {
+    left: 5px;
+}
+
+.sprite-btn_ic_brn_right,
+.sprite-btn_ic_gray_right {
+    right: 5px;
+}
+
+.sprite-btn_ic_brn_right {
+    background-position: -47px -5px;
+}
+
+.sprite-btn_ic_gray_right {
+    background-position: -91px -5px;
+}
+
+.sprite-btn_ic_brn_left {
+    background-position: -25px -5px;
+}
+
+.sprite-btn_ic_gray_left {
+    background-position: -69px -5px;
+}
+
+.sprite-button_bg_orange_left,
+.sprite-button_bg_orange_right,
+.sprite-button_bg_white_left,
+.sprite-button_bg_white_right {
+    width: 68px;
+    height: 26px;
+}
+
+.sprite-button_bg_orange_left {
+    background-position: -5px -25px;
+}
+
+.sprite-button_bg_orange_right {
+    background-position: -5px -61px;
+}
+
+.sprite-button_bg_white_left {
+    background-position: -5px -97px;
+}
+
+.sprite-button_bg_white_right {
+    background-position: -113px -5px;
+}
+
+.sprite-button_find_orange_right,
+.sprite-button_find_white_right {
+    width: 110px;
+    height: 26px;
+}
+
+.sprite-button_find_orange_right {
+    background-position: -83px -41px;
+}
+
+.sprite-button_find_white_right {
+    background-position: -83px -77px;
 }
